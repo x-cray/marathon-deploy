@@ -60,7 +60,7 @@ elif [ $CREATE_CODE -eq 409 ]; then
 		curl_success_exit "Successfully updated app" "$UPDATE_CODE" "$UPDATE_RESPONSE"
 	else
 		curl_error_exit "Error updating app" "$UPDATE_CODE" "$UPDATE_RESPONSE"
-	fi;
+	fi
 else
 	curl_error_exit "Error creating app" "$CREATE_CODE" "$CREATE_RESPONSE"
-fi;
+fi
